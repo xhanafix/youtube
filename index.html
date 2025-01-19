@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Script Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <header>
+            <h1>YouTube Script Generator</h1>
+            <div class="theme-switcher">
+                <button id="themeToggle">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+            </div>
+            <div class="api-key-section">
+                <input type="password" id="apiKey" placeholder="Enter OpenRouter API Key">
+                <button id="saveKey">Save Key</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <input type="text" id="videoTopic" placeholder="Enter your video topic">
+                <button id="generate">Generate Script</button>
+            </div>
+
+            <div class="output-section">
+                <div class="progress-bar hidden">
+                    <div class="progress"></div>
+                    <div class="progress-text">0:30</div>
+                </div>
+                <div class="loading-spinner hidden"></div>
+                <div class="script-output">
+                    <button id="copyButton" class="hidden">Copy Script</button>
+                    <div id="scriptContent"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>© xhanafix 2025</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
